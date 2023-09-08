@@ -1,6 +1,6 @@
 <p align="center">
-	<a href="https://replugged.dev/install?identifier=dev.KwilzOne.UnlockMetaLocks">
-		<img src="https://raw.githubusercontent.com/KwilzOne/UnlockMetaLocks/main/assets/logo.png">
+	<a href="https://kwilzone.github.io">
+		<img src="https://raw.githubusercontent.com/KwilzOne/KwilzOne.github.io/whitewolf/assets/logo.png">
 	</a>
 </p>
 
