@@ -106,4 +106,4 @@ dist
 /bundle
 
 # Extra
-~!gitPush.cmd
+push.cmd
