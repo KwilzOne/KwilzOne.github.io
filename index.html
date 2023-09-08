@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KwilzOne.github.io</title>
+</head>
+
+<body>
+	<div class="block">
+		<div id="content">
+			<a>KwilzOne.github.io</a>
+		</div>
+		</block>
+		<style>
+			body {
+				height: 100vh;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				background-color: #000;
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				flex-direction: row;
+				user-select: none;
+				pointer-events: none;
+			}
+
+			#content {
+				top: 50%;
+				left: 50%;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			#content a {
+				font-size: 42px;
+				font-weight: 600;
+				white-space: nowrap;
+				text-shadow: 0 0 40px #000;
+			}
+
+			#content a:first-child {
+				background: linear-gradient(90deg,
+						rgba(255, 0, 0, 1) 0%,
+						rgba(255, 154, 0, 1) 10%,
+						rgba(208, 222, 33, 1) 20%,
+						rgba(79, 220, 74, 1) 30%,
+						rgba(63, 218, 216, 1) 40%,
+						rgba(47, 201, 226, 1) 50%,
+						rgba(28, 127, 238, 1) 60%,
+						rgba(95, 21, 242, 1) 70%,
+						rgba(186, 12, 248, 1) 80%,
+						rgba(251, 7, 217, 1) 90%,
+						rgba(255, 0, 0, 1) 100%);
+				animation: hue 2s linear infinite;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			#content a:before {
+				filter: blur(150px);
+			}
+
+			@keyframes hue {
+				to {
+					filter: hue-rotate(-360deg)
+				}
+			}
+
+			.block {
+				position: relative;
+				width: 500px;
+				height: 250px;
+				background: linear-gradient(0deg, #000, #272727);
+				border-radius: 16px;
+			}
+
+			.block:before,
+			.block:after {
+				content: '';
+				position: absolute;
+				left: -2px;
+				top: -2px;
+				background: linear-gradient(90deg,
+						rgba(255, 0, 0, 1) 0%,
+						rgba(255, 154, 0, 1) 10%,
+						rgba(208, 222, 33, 1) 20%,
+						rgba(79, 220, 74, 1) 30%,
+						rgba(63, 218, 216, 1) 40%,
+						rgba(47, 201, 226, 1) 50%,
+						rgba(28, 127, 238, 1) 60%,
+						rgba(95, 21, 242, 1) 70%,
+						rgba(186, 12, 248, 1) 80%,
+						rgba(251, 7, 217, 1) 90%,
+						rgba(255, 0, 0, 1) 100%);
+				background-size: 500%;
+				width: calc(100% + 4px);
+				height: calc(100% + 4px);
+				z-index: -1;
+				animation: animation 20s linear infinite;
+				border-radius: 16px;
+			}
+
+			@keyframes animation {
+				0% {
+					background-position: 0 0;
+				}
+
+				50% {
+					background-position: 500% 0;
+				}
+
+				100% {
+					background-position: 0 0;
+				}
+			}
+
+			.block:after {
+				filter: blur(16px);
+			}
+
+			.block::before {
+				filter: blur(150px);
+			}
+		</style>
+</body>
+
+</html>
